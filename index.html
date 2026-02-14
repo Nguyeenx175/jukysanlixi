@@ -292,7 +292,7 @@ $( ".lammoipopupnhantien" ).hover(
                   document.getElementById("annhantien").style.display = ""; // Hiển thị nút nhận tiền
                   document.getElementById("xuatsotien").src = "img/" + indicatedSegment.text.replace(".000 VNĐ", "") + "k.jpg"; // Xuất ảnh tiền
 
-                  swal("Tết ấm no!", "Bạn nhận được " + indicatedSegment.text + "\nBạn còn lại " + (solanquay - dem) + " lần quay\nChú ý: Nếu quay tiếp bạn sẽ mất số tiền trước đó!", "success");
+                  swal("Tết ấm no!", "Bạn nhận được " + indicatedSegment.text + "\nBạn còn lại " + (solanquay - dem), "success");
               }
           } else { // Nếu hết lượt quay(dem = solanquay)
               document.getElementById("xuatluotquay").innerHTML = "0";
